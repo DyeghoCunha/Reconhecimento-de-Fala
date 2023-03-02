@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap');
+
+
+
+:root{
+    --fonte: 'Poppins', sans-serif;
+    --bg-color: #3F979B;
+
+    --primary-color: #8BF5FA;
+    --secondary-color:#F9F54B;
+}
+
+
+
+:root{
+
+    --corFundo: #018080;
+    --corFundo2: #0A5D5D;
+    --barraCinza: #C2C4C4;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: var(--corFundo2);
+    width: 100vw;
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+
+}
+main{
+   
+ width: 100%;
+ height: 95%;
+    
+}
+
+footer{
+
+    background-color: var(--barraCinza);
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    height: 5%;
+    
+   
+}
+.start img{
+    margin-left: 5px;
+    margin-right: 2px;
+    border: 2px rgb(119, 118, 118) solid;
+}
+
+
+
+
+
+
+
+/*--------------------------JOGO------------------*/
+.container__jogo{
+    position: absolute;
+    border: 5px solid var(--barraCinza);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 60vh;
+    min-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--fonte);
+    font-weight: 200;
+    transform: translate(400px, 100px);
+    box-shadow: 7px 7px  black;
+
+}
+#icons{
+    display: flex;
+    right:0;
+    
+}
+.icones__barra{
+    justify-content: end;
+    height: 10px;
+    
+    
+    
+
+}
+.barra__janela{
+    position: inherit;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    background-color: var(--barraCinza);
+}
+
+span {
+    color: var(--secondary-color);
+}
+.fa-solid{
+    color: var(--secondary-color);
+}
+
+.h1__jogo{
+    font-size: 5em;
+}
+
+.h2__jogo{
+    font-size: 4em;
+    color: var(--secondary-color);
+
+}
+
+
+.h3__jogo{
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.mensagem{
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.box{
+    color: var(--secondary-color);
+    font-size: 5em;
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+}
+
+.container__fala{
+    display: none;
+}
+
+
+.btn-jogar{
+    padding: 8px 15px;
+    border: 1px solid var(--primary-color);
+    
+    border-radius: 5px;
+    margin-top: 20px;
+    background: transparent;
+    color: var(--primary-color);
+   
+
+}
+
+.btn-jogar:hover{
+    padding: 8px 15px;
+    /* border: 1px solid var(--primary-color); */
+    border:0;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: transparent;
+    color: var(--primary-color);
+    box-shadow: var(--secondary-color) 4px 4px 5px, inset var(--secondary-color) 4px 4px 5px;
+    text-shadow: var(--secondary-color) 4px 4px 5px;
+
+}
+.btn-jogar:active{
+    padding: 8px 15px;
+    /* border: 1px solid var(--primary-color); */
+    border:0;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: transparent;
+    color: transparent;
+    box-shadow: inset var(--secondary-color) 4px 5px 10px,  var(--secondary-color) 4px 4px 10px ;
+    text-shadow: var(--secondary-color) 4px 4px ;
+
+}
+
